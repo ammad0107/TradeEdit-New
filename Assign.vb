@@ -5,6 +5,7 @@
         Dim tradetype As String
         If (Class1.tT = 1) Then
             tradetype = "Imports"
+            Dim t As Int32 = 8
             Label9.Text = "Import Data Assignment"
         End If
 
