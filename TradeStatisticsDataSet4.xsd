@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TradeStatisticsDataSet4" targetNamespace="http://tempuri.org/TradeStatisticsDataSet4.xsd" xmlns:mstns="http://tempuri.org/TradeStatisticsDataSet4.xsd" xmlns="http://tempuri.org/TradeStatisticsDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="TradeStatisticsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TradeStatisticsConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TradeEdit.My.MySettings.GlobalReference.Default.TradeStatisticsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SupervisorWorkTableAdapter" GeneratorDataComponentClassName="SupervisorWorkTableAdapter" Name="SupervisorWork" UserDataComponentName="SupervisorWorkTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TradeStatisticsConnectionString (MySettings)" DbObjectName="TradeStatistics.dbo.SupervisorWork" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT UserName, YY, MM, FromRec, ToRec FROM dbo.SupervisorWork where tt=1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="YY" DataSetColumn="YY" />
+              <Mapping SourceColumn="MM" DataSetColumn="MM" />
+              <Mapping SourceColumn="FromRec" DataSetColumn="FromRec" />
+              <Mapping SourceColumn="ToRec" DataSetColumn="ToRec" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TradeStatisticsDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TradeStatisticsDataSet4" msprop:Generator_UserDSName="TradeStatisticsDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SupervisorWork" msprop:Generator_TableClassName="SupervisorWorkDataTable" msprop:Generator_TableVarName="tableSupervisorWork" msprop:Generator_RowChangedName="SupervisorWorkRowChanged" msprop:Generator_TablePropName="SupervisorWork" msprop:Generator_RowDeletingName="SupervisorWorkRowDeleting" msprop:Generator_RowChangingName="SupervisorWorkRowChanging" msprop:Generator_RowEvHandlerName="SupervisorWorkRowChangeEventHandler" msprop:Generator_RowDeletedName="SupervisorWorkRowDeleted" msprop:Generator_RowClassName="SupervisorWorkRow" msprop:Generator_UserTableName="SupervisorWork" msprop:Generator_RowEvArgName="SupervisorWorkRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YY" msprop:Generator_ColumnVarNameInTable="columnYY" msprop:Generator_ColumnPropNameInRow="YY" msprop:Generator_ColumnPropNameInTable="YYColumn" msprop:Generator_UserColumnName="YY" type="xs:int" />
+              <xs:element name="MM" msprop:Generator_ColumnVarNameInTable="columnMM" msprop:Generator_ColumnPropNameInRow="MM" msprop:Generator_ColumnPropNameInTable="MMColumn" msprop:Generator_UserColumnName="MM" type="xs:int" />
+              <xs:element name="FromRec" msprop:Generator_ColumnVarNameInTable="columnFromRec" msprop:Generator_ColumnPropNameInRow="FromRec" msprop:Generator_ColumnPropNameInTable="FromRecColumn" msprop:Generator_UserColumnName="FromRec" type="xs:int" />
+              <xs:element name="ToRec" msprop:Generator_ColumnVarNameInTable="columnToRec" msprop:Generator_ColumnPropNameInRow="ToRec" msprop:Generator_ColumnPropNameInTable="ToRecColumn" msprop:Generator_UserColumnName="ToRec" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
